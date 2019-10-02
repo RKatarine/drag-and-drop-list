@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta httpEquiv="Pragma" content="no-cache" />
+    <link rel="icon" href="/favicon" type="image/x-icon" id="favicon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <title>Bariant Geoserver</title>
+    <style>
+      body {
+        background-color: #4242421a;
+        font-family: Roboto, sans-serif;
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        overflow-y: hidden;
+      }
+
+      #root {
+        overflow: hidden;
+        width: 100%;
+        height: -webkit-fill-available;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .draggableToolBar {
+        -webkit-app-region: drag;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
