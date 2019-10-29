@@ -1,5 +1,5 @@
 import React from "react";
-import withHandlers from "../hoc/withHandlers";
+import withAction from "./action/withAction";
 
 const BookForm = (props)=> {
   const { firstName } = props.data;
@@ -14,19 +14,4 @@ const BookForm = (props)=> {
   )
 };
 
-export default withHandlers({
-  submit: props => values => {
-    console.log(props);
-    console.log(values);
-  },
-  onClick: props => event => {
-
-    console.log(props);
-    console.log(event)
-  },
-  onChange: props => event => {
-
-    console.log(props);
-    console.log(event)
-  }
-})(BookForm)
+export default withAction(BookForm)
